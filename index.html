@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo animations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="banner-slidet">
+        <div class="banner-slider-images">
+            <div class="main-image">
+                <img src="labour-child.png"
+                onmouseover="this.src='school-child.png'"
+                onmouseout="this.src='labour-child.png'"
+                alt=""
+           />
+            </div>
+            <div class="main-caption">
+                <h1>Welcome to <span>National Service Scheme</span></h1>
+                <p>The National Service Scheme (NSS) is a Central Sector Scheme of Government of India</p>
+                <div class="readmore"><a href="javascript:;">Read More</a></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.main-image')
+      .mouseover(function(){
+            $('.banner-slider-images').css("background-image", "url(bg1.jpg)"); 
+      })
+      .mouseout(function(){
+            $('.banner-slider-images').css("background-image", "url(bg2.jpg)"); 
+       })
+        })
+    </script>  
+
+
+    
+</body>
+</html>
